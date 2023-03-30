@@ -1,0 +1,61 @@
+#resolução de atividade
+print(100==(50+50))
+print(100>=(50+50))
+print(100>(50+0))
+print(100<=(50+50))
+print(100!=(50+50))
+print(100 != 90)
+
+     
+True
+True
+True
+True
+False
+
+#Se a idade for maior que 16, exiba: pode tirar habilitação
+idade= int(input('Digite a idade:'))
+if(idade >= 16): 
+  print('Pode tirar habilitação')
+else:
+  print('ainda não,filé')
+     
+
+sexo = input('Insira o sexo:, (masculino ou f (feminino' )
+idade = int(input('insira a idade:'))
+if((sexo == 'F' and  idade >= 55) or (sexo == 'M' and idade >= 60)):
+ print('Pode se aponsentar')
+else:
+  print('ainda não pode')
+
+     
+Pode se aponsentar
+
+
+sexo = 'M'
+idade = 68
+if(sexo == 'F' and  idade >= 55):
+  print('Pode se aponsentar')
+elif(sexo == 'M' and idade >= 60):
+  print('Pode se aponsentar')
+else:
+  print('ainda não pode')
+
+     
+
+a = int(print('Digite o primeiro nub:'))
+b = int(print('Digite o segundo nub:'))
+c = int(print('Digite o terceiro nub:'))
+if(a>b < c):
+  print( 'É menor')
+else:
+  print(" não é menor")
+     
+
+primeiro= int(input(' primeiro nub:'))
+segundo = int(input('segundo nub:'))
+maior = primeiro
+if( segundo >= primeiro ):
+  print(' maior:', maior)
+else:
+  print('menor:', menor)
