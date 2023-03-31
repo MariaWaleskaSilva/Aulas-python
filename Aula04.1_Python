@@ -1,0 +1,183 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOAUlA2KpmxjmxrKGR6SPLo",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/MariaWaleskaSilva/Aulas-python/blob/main/Aula04.1_Python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 7,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qA4unncX7Seh",
+        "outputId": "42b66cc8-4aff-43b4-8f1f-007af6313b85"
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[33, 2, 1, 5, 4]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ],
+      "source": [
+        "numeros = [ 33, 2, 1, 5, 4 ]\n",
+        "numeros"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#indices [33, 2, 1, 5, 4]\n",
+        "print(numeros[0])\n",
+        "print(numeros[1])\n",
+        "print(numeros[2])\n",
+        "print(numeros[3])\n",
+        "print(numeros[4])\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MKbc7fna8Qbx",
+        "outputId": "62d9fab0-9fea-4a91-d49d-9c889bd6ad08"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "33\n",
+            "2\n",
+            "1\n",
+            "5\n",
+            "4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#listas de outros tipos\n",
+        "alunos = ['Sandra, Rafael, Lisandre, Castiel, nathaniel']\n",
+        "alunos"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "47kcbF8i-GNt",
+        "outputId": "e8da4225-ae59-4910-d321-c4c578a5225d"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['Sandra, Rafael, Lisandre, Castiel, nathaniel']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 17
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#alterar o valores de itens da lista\n",
+        "alunos[3] = 'Lisandre'"
+      ],
+      "metadata": {
+        "id": "StDbjnlf-hhB"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#adiciona o valor\n",
+        "alunos.append('Lucca')\n",
+        "alunos"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_BdZF_PI_Ji_",
+        "outputId": "a08c28c4-a2f1-4d44-8b32-6b076964a7ba"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['Sandra, Rafael, Lisandre, Castiel, nathaniel',\n",
+              " 'Castiel',\n",
+              " 'Nathaniel',\n",
+              " 'Lucca',\n",
+              " 'Lucca']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 25
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "alunos.append(input('Digite o nome:'))"
+      ],
+      "metadata": {
+        "id": "CgT7eow0_oyf"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "alunos.pop(input('Digite o nome:'))"
+      ],
+      "metadata": {
+        "id": "LmMETm8dAJxd"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
