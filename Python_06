@@ -1,0 +1,110 @@
+#Jogo adivinhe o número
+#Desenvolva um jogo de adivinhação que siga as seguintes regras:
+#1 - O jogo gera, aleatoriamente, um número secreto do tipo inteiro entre 0 e 100
+#2 - Solicita ao usuário que tente adivinhar o número entre 0 e 100.
+#3 - Um laço verifica se o número digitado é igual ao número secreto
+#4 - Se o número digitado for menor que o número secreto, o valor mínimo passa a ser o número digitado
+#5 - Se o número digitado for maior que o número secreto, o valor máximo passa a ser o número digitado
+#6 - se o jogador acertar, recebe uma mensagem de parabéns e o número de tentativas que foi necessária.
+###Para gerar inteiros aleatórios, importe from random import * e use a função randint()
+
+import random
+
+num = random.randrange(101)
+minimo = 0
+maximo = 100
+pitaco = int(input(f'Chute um número entre {minimo} e {maximo}: '))
+cont = 1
+
+while(num != pitaco):
+  if(pitaco > num):
+    maximo = pitaco
+  else:
+    minimo = pitaco
+  pitaco = int(input(f'Chute um número entre {minimo} e {maximo}: '))
+  cont+=1
+
+print(f'ACERTOU, Danone! {cont} tentativas!') 
+     
+     
+     
+     
+def primeirafuncao():
+  print('minha primeria função,ó!')
+
+  #chamando a funçao
+  primeirafuncao()
+ 
+def pronometratam(pronome):
+  print(pronome, "Waleska")
+  
+pronometratam('caiu')
+pronometratam('não')
+pronometratam('sua')
+
+
+
+
+#Função que recebe como parâmetros Nome e Ano de nascimento
+#Calcula a idade do sujeito e retorna algo como:
+# Asdrúbal tem 28 anos
+     
+  def nomeEAno(nome, ano):
+  idade = 2023 - ano
+  print(nome, idade,'anos')
+  
+  nomeEAno('Waleska', 2005)
+  
+  
+  
+  
+  
+  #uma função deve ser chamada com o número cetinho de argumento
+def boasvindas(nome, cargo):
+  print('Ola, ' + cargo + '' + nome)
+  
+boasvindas('Amarelinha', 'Engenharia')
+boasvindas('jorge', 'Carimbador')
+boasvindas('Maria', 'Sargento')
+
+
+
+
+def somanotas(*notas):
+  soma = 0 
+  for nota in notas:
+    soma += nota
+  print(soma)
+  
+  somanotas(9, 8, 10, 7, 9, 8)
+  51
+  
+
+def imc(peso, altura):
+  return peso/altura**2
+     
+     def situacaoPeso(imc):
+  if(imc < 18.5):
+    print('Abaixo do peso normal')
+  elif(imc < 24.9):
+    print('Peso normal')
+  else:
+    print('Obesidade')
+    
+    situacaoPeso(imc(92, 1.73))
+    
+    
+    
+    #adição
+def soma(a, b):
+  return a + b
+#subtração
+def subtração(a,b):
+  return a - b
+#divisãp
+def divisão(a, b):
+   return a / b
+#multiplicação
+def multiplicaçao(a, b):
+  return a * b
+  
